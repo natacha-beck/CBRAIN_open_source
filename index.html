@@ -1,85 +1,88 @@
 <!doctype html>
 <html lang="en">
 
-	<head>
-		<meta charset="utf-8">
+  <head>
+    <meta charset="utf-8">
 
-		<title>CBRAIN - How it became Open Source</title>
+    <title>CBRAIN - How it became Open Source</title>
 
-		<meta name="description" content="CBRAIN - Description of the process used to make CBRAIN Open source">
-		<meta name="author" content="Natacha Beck">
+    <meta name="description" content="CBRAIN - Description of the process used to make CBRAIN Open source">
+    <meta name="author" content="Natacha Beck">
 
-		<meta name="apple-mobile-web-app-capable" content="yes" />
-		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
 
-		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/night.css" id="theme">
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/night.css" id="theme">
+  
 
-		<!-- Code syntax highlighting -->
-		<link rel="stylesheet" href="lib/css/zenburn.css">
 
-		<!-- Printing and PDF exports -->
-		<script>
-			var link = document.createElement( 'link' );
-			link.rel = 'stylesheet';
-			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-			document.getElementsByTagName( 'head' )[0].appendChild( link );
-		</script>
+    <!-- Code syntax highlighting -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
 
-		<!--[if lt IE 9]>
-		<script src="lib/js/html5shiv.js"></script>
-		<![endif]-->
-	</head>
+    <!-- Printing and PDF exports -->
+    <script>
+      var link = document.createElement( 'link' );
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+      document.getElementsByTagName( 'head' )[0].appendChild( link );
+    </script>
 
-	<body>
+    <!--[if lt IE 9]>
+    <script src="lib/js/html5shiv.js"></script>
+    <![endif]-->
+  </head>
 
-		<div class="reveal">
+  <body>
 
-			<!-- Any section element inside of this container is displayed as a slide -->
-			<div class="slides">
-				<section>
-					<h1>CBRAIN</h1>
-					<h3>How it became Open Source</h3>
-					<p>
-						<small>Natacha Beck and Pierre Rioux</a></small>
-					</p>
-				</section>
+    <div class="reveal">
 
-				<section>
-					<h2>Little bit of history</h2>
-					<ul>
-						<li>Created in 2008</li>
-						<li>Developed as a service</li>
-						<li>Web-based collaborative research platform</li>
-						<li>Compute-intensive neuroimaging research</li>
-						<li>Code and service were closely linked</li>
-					</ul>
-				</section>
+      <!-- Any section element inside of this container is displayed as a slide -->
+      <div class="slides">
+        <section>
+          <h1>CBRAIN</h1>
+          <h3>How it became Open Source</h3>
+          <p>
+            <small>Natacha Beck and Pierre Rioux</a></small>
+          </p>
+        </section>
 
-				<section>
-					<h2>Why?</h2>
-					<ul>
-						<li><a href="http://journal.frontiersin.org/article/10.3389/fninf.2014.00054/abstract" target="_blank">The CBRAIN paper</a> was published in May 2014...<br>
-						In it we promised that CBRAIN will be Open Source for mid 2014</li>
-						<li>For grants</li>
-						<li>Improve the visibilty</li>
-						<li>External contributors</li>
-					</ul>
-				</section>
+        <section>
+          <h2>Little bit of history</h2>
+          <ul>
+            <li>Created in 2008</li>
+            <li>Developed as a service</li>
+            <li>Web-based collaborative research platform</li>
+            <li>Compute-intensive neuroimaging research</li>
+            <li>Code and service were closely linked</li>
+            <li>Developed client APIs in 2014</li>
+          </ul>
+        </section>
 
-				<section>
-					<h2>Our vision</h2>
-					<ul>
-						<li>A generic platform</li>
-						<li>Separate code base and service</li>
-						<li>Easy to find and download</li>
-						<li>Easy to install and understand</li>
-						<li>Easy to contribute to</li>
-					</ul>
-				</section>
+        <section>
+          <h2>Why?</h2>
+          <ul>
+            <li><a href="http://journal.frontiersin.org/article/10.3389/fninf.2014.00054/abstract" target="_blank">The CBRAIN paper</a> was published in May 2014...<br>
+            In it we promised that CBRAIN will be Open Source for mid 2014</li>
+            <li>For grants</li>
+            <li>Improve the visibilty</li>
+            <li>External contributors</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Our vision</h2>
+          <ul>
+            <li>A generic platform</li>
+            <li>Separate code base and service</li>
+            <li>Easy to find and download</li>
+            <li>Easy to install and understand</li>
+            <li>Easy to contribute to</li>
+          </ul>
+        </section>
 
         <section>
           <h2>Implementation of our vision</h2>
@@ -110,9 +113,9 @@
         <section>
           <h2>Updated key components</h2>
           <ul>
-						<li>Ruby (2.2)</li>
-						<li>Rails (3.2-stable)</li>
-						<li>Testing suite (Rspec: 3.2)</li>
+            <li>Ruby (2.2)</li>
+            <li>Rails (3.2-stable)</li>
+            <li>Testing suite (Rspec: 3.2)</li>
             <li>Volume viewer (2.3.0)</li>
             <li>Surface viewer (now using web-service)</li>
           </ul>
@@ -121,167 +124,189 @@
         </section>
 
         <section>
-        	<h2>Extracted CBRAIN plugins</h2>
-        	<ul>
-        	<li>Userfiles:</li>
-						<ul>
-							<li>Models that represent diferrent types of files</li>
-							<li>E.g. TextFile, DicomFile, MgzFile...</li>
-						</ul>        	
-        	<li>CbrainTask:</li>
-        	  <ul>
-        	  	<li>Models that represent different types of task</li>
-        	  	<li>E.g. Diagnostic, Civet, Mnc2nii...</li>
-        	  </ul>
-        	  <br><br>
-        	  <strong>Note:</strong> It is not a specific file or task present into the service
+          <h2>Extracted CBRAIN plugins</h2>
+          <ul>
+          <li>Userfiles:</li>
+            <ul>
+              <li>Models that represent diferrent types of files</li>
+              <li>E.g. TextFile, DicomFile, MgzFile...</li>
+            </ul>         
+          <li>CbrainTask:</li>
+            <ul>
+              <li>Models that represent different types of tasks</li>
+              <li>E.g. Diagnostic, Civet, Mnc2nii...</li>
+            </ul>
+            <br><br>
+            <strong>Note:</strong> It is not a specific file or task present into the service
         </section>
 
         <section>
-        	<h2>Extracted CBRAIN plugins</h2>
-        	<ul>
-        	  <li>Prior to 2011 it were store in the traditional Rails location: app/models</li>
-        	  <li>All the Userfiles and CbrainTask models come with CBRAIN</li>
-        	  <li>First level of extraction: all the Userfiles and CbrainTasks where put in a subdirectory</li>
-        	</ul>
+          <h2>Extracted CBRAIN plugins</h2>
+          <ul>
+            <li>Prior to 2011 it were store in the traditional Rails location: app/models</li>
+            <li>All the Userfiles and CbrainTask models come with CBRAIN</li>
+            <li>First level of extraction: all the Userfiles and CbrainTasks where put in a subdirectory</li>
+          </ul>
         </section>
  
         <section>
           <h2>Extracted CBRAIN plugins</h2>
- 					<img id="compare_plugins" src="img/compare_plugins.png">
-					<br>
- 					<strong>Why?</strong> Packaged for easy download and installation, CBRAIN is no longer domain specific
+          <img id="compare_plugins" src="img/compare_plugins.png">
+          <br>
+          <strong>Why?</strong> Packaged for easy download and installation, CBRAIN is no longer domain specific
         </section>
         
         <section>
-        	<h2>Extracted CBRAIN plugins</h2>
-        	<a href="https://github.com/aces?utf8=%E2%9C%93&query=plugins" target="_blank">
-        	<img id="cbrain_plugins" src="img/cbrain_plugins.png">
-        	</a>
+          <h2>Extracted CBRAIN plugins</h2>
+          <a href="https://github.com/aces?utf8=%E2%9C%93&query=plugins" target="_blank">
+          <img id="cbrain_plugins" src="img/cbrain_plugins.png">
+          </a>
         </section>
 
         <section>
           <h2>Extracted CBRAIN plugins</h2>
-        	<pre>
-        		<code>
-cd /path/to/BrainPortal/cbrain_plugins
+          <pre>
+<code>cd /path/to/BrainPortal/cbrain_plugins
 # will create 'cbrain-plugins-fsl/' here
 git clone https://github.com/aces/cbrain-plugins-fsl.git  
-rake cbrain:plugins:install:all
-        	  </code>
-        	</pre>
+rake cbrain:plugins:install:all</code>
+          </pre>
         </section>
-        	
+          
         <section>
           <h2>Extracted CBRAIN client APIs</h2>
- 					<ul>
- 					  <li>Already well encapsuled</li>
- 					  <li>But needed to be removed from CBRAIN</li>
- 					  <li>So we created a <a href="https://github.com/aces/cbrain-apis" target="_blank">new GitHub repository</a></li>
- 					</ul>
- 					<br><br>
- 					<strong>Why?</strong> CBRAIN and APIs was 2 differents project totally independant
+          <ul>
+            <li>Already well encapsuled</li>
+            <li>But needed to be removed from CBRAIN</li>
+            <li>So we created a <a href="https://github.com/aces/cbrain-apis" target="_blank">new GitHub repository</a></li>
+          </ul>
+          <br><br>
+          <strong>Why?</strong> CBRAIN and APIs was 2 differents project totally independant
         </section>
 
         <section>
           <h2>Removed service-specific files</h2>
- 					<ul>
- 					  <li>Licenses (Term of services)</li>
- 					  <li>Loris*DataProvider</li>
- 					  <li>Online service documentation</li>
- 					</ul>
- 					<br><br>
- 					<strong>Why?</strong> This part should not be part of the platform
+          <ul>
+            <li>Licenses (Term of services)</li>
+            <li>Loris*DataProvider</li>
+            <li>Online service documentation</li>
+          </ul>
+          <br><br>
+          <strong>Why?</strong> This part should not be part of the platform
         </section>
 
         <section>
           <h2>Improved installation</h2>
           <ul>
-          	<li>Removed unused library</li>
-          	<li>Fixed lots of deprecation warnings</li>
-          	<li>Tested installation on different systems</li>
-          	<li>Updated the documentation</li>
+            <li>Removed unused libraries</li>
+            <li>Fixed lots of deprecation warnings</li>
+            <li>Tested installation on different systems</li>
+            <li>Updated the documentation</li>
           </ul>
           <br><br>
           <strong>Why?</strong> Should be easy to install/manage if we want new CBRAIN platform elsewhere and new contributors
         </section>
 
-				<section>
-				  <h2>Cleaned Git repository</h2>
-				  <ul>
-				  	<li>Used the <a href="https://rtyley.github.io/bfg-repo-cleaner/" target="_blank">bfg-repo-cleaner</a> in order to:</li>
-				  	<ul>
-				      <li>Cleaned history of extracted parts (plugins and APIs)</li>
-				      <li>Cleaned bad commits (e.g. big log files...)</li>
-				      <li>Deleted unused branches</li>
-				    </ul>
-				  </ul>
-				  <br><br>
-				  <strong>Why?</strong> Should be done before the release or never<br>
-				                        Reduce the size of Git repository
-				</section>
-				
-				<section>
-					<h2>Added documentation</h2>
-					<ul>
-					  <li>Removed all the documentation files embedded in the code base</li>
-					  <li>Complete documentation in <a href="https://github.com/aces/cbrain/wiki" target="_blank">GitHub wiki</a></li>
-					  <li>Created README for CBRAIN and all sub-projects (APIs, plugins)</li>
-					</ul>
-					<br><br>
-					<strong>Why?</strong> Should be easy to understand what CBRAIN is, easy to install and used
-				</section>
-				
-				<section>
-					<h2>Post Public Release</h2>
-					<ul>
-						<li>More documentation added in wiki and code base</li>
-						<li>Fixed some loose ends</li>
-					</ul>
-				</section>
-				
-				<section>
-					<h2>Some lessons</h2>
-					<ul>
-					  <li>What could have been done to make it easier</li>
-					  <ul>
-  					  <li>Early separation between the service and the code</li>
-	  				  <li>Early separation between the core of the platform what is optional</li>
-	  				  <li>Used wiki for documentation</li>
-		  			</ul>
-  				  <li>What was already well done</li>
-  				  <ul>
-  				  	<li>APIs was already well encapsuled</li>
-  				  	<li>Already have a GPL licence</li>
-  				  	<li>Code base already well documented</li>
-  				  	<li>Used of Git and GitHub</li>
-  				  </ul>
-					 
-				</section>
-				
-				<section>
-					<h2>And now...</h2>
-					<ul>
-						<li>Domain independent</li>
-						<li>People can create a new independent service</li>
-						<li>Programmers can contribute to the main project</li>
-						<li>Or to specific plugins, or create new one</li>
-					</ul>
-				</section>
-
-				<section>
-				  <h2>The end...</h2>
-				  <video>
-            <source data-src="video/gource.mp4" type="video/mp4" />
+        <section>
+          <h2>Cleaned Git repository</h2>
+          <ul>
+            <li>Used the <a href="https://rtyley.github.io/bfg-repo-cleaner/" target="_blank">bfg-repo-cleaner</a> in order to:</li>
+            <ul>
+              <li>Cleaned history of extracted parts (plugins and APIs)</li>
+              <li>Cleaned bad commits (e.g. big log files...)</li>
+              <li>Deleted unused branches</li>
+            </ul>
+          </ul>
+          <br><br>
+          <strong>Why?</strong> Should be done before the release or never<br>
+                                Reduce the size of Git repository
+        </section>
+        
+        <section>
+          <h2>Added documentation</h2>
+          <ul>
+            <li>Removed all the documentation files embedded in the code base</li>
+            <li>Complete documentation in <a href="https://github.com/aces/cbrain/wiki" target="_blank">GitHub wiki</a></li>
+            <li>Created README for CBRAIN and all sub-projects (APIs, plugins)</li>
+          </ul>
+          <br><br>
+          <strong>Why?</strong> Should be easy to understand what CBRAIN is, easy to install and use
+        </section>
+        
+        <section>
+          <h2>Post Public Release</h2>
+          <ul>
+            <li>More documentation added in wiki and code base</li>
+            <li>Fixed some loose ends</li>
+          </ul>
+        </section>
+        
+        <section>
+          <h2>Some lessons</h2>
+          <ul>
+            <li>What could have been done to make it easier</li>
+            <ul>
+              <li>Early separation between the service and the code</li>
+              <li>Early separation between the core of the platform what is optional</li>
+              <li>Used wiki for documentation</li>
+              <li>Choosed a good name!</li>
+            </ul>
+            <li>What was already well done</li>
+            <ul>
+              <li>APIs was already well encapsuled</li>
+              <li>Already have a GPL licence</li>
+              <li>Code base already well documented</li>
+              <li>Used of Git and GitHub</li>
+            </ul>
+           
+        </section>
+        
+        <section>
+          <h2>And now...</h2>
+          <ul>
+            <li>Domain independent</li>
+            <li>People can create a new independent service</li>
+            <li>Programmers can contribute to the main project</li>
+            <li>Or to specific plugins, or create new plugins</li>
+          </ul>
+        </section>
+        
+        <section>
+          <h2>CBRAIN is...</h2>
+          <ul>
+            <li>Alan C. Evans</li>
+            <li>Reza Adalat</li>
+            <li>Marc-Etienne Rousseau</li>
+            <li>Pierre Rioux</li>
+            <li>Natacha Beck</li>
+            <li>Tristan Glatard</li>
+            <li>Ehsan Afkhami</li>
+            <li>Remi Bernard</li>
+          </ul>
+        </section>
+        
+        <section>
+          <h2>CBRAIN was...</h2>
+          <ul>
+            <li>Tarek Sherif (2008-2014)</li>
+            <li>Nicolas Kassis (2010-2012)</li>
+            <li>Angela McCloskey (2009-2010)</li>
+            <li>Athena Buckthought(documentation: 2015)</li>
+            <li>Najmeh Khalili-Mahani (documentation: 2015)</li>
+            <li>Anda Pacurar, Anita Oder, Jacques Waller, Martyn Klassen, Ronghai Tu, Mathieu Desrosiers, Anton Zoubarev, Ryan Thomson, Nasim Vafai (2008-2010)</li>
+            <li>...</li>
+          </ul>
+        </section>
+        
+        <section>
+          <h2>Thanks!</h2>
+          <video data-autoplay>
+            <source data-src="video/gource_compress.mp4" type="video/mp4" />
           </video>
-				  <h3>Thanks!</h3>
-				</section>
-
+        </section>
       </div>
 
     </div>
-
-
 
     <script src="lib/js/head.min.js"></script>
     <script src="js/reveal.js"></script>
